@@ -1,0 +1,10 @@
+.vscode
+virtual
+.eggs
+.cfg
+
+*.pyc
+__pycache__
+*.egg-info
+.tox
+.coverage*

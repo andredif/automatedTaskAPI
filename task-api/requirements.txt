@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+sqlalchemy==1.4.3
+debugpy
+pytest
+requests
