@@ -13,7 +13,6 @@ file_path = os.path.join(file_dir, "./data.json")
 class UUIDEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, UUID):
-            # if the obj is uuid, we simply return the value of uuid
             return str(obj)
         if isinstance(obj, datetime):
             return str(obj)
@@ -97,7 +96,6 @@ def check_password(password):
 
 
 def change_rpc(rpc):
-    print("in rpc")
     data = load_contracts()
     data["rpc"] = rpc
     save_contracts(data)
